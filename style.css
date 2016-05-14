@@ -35,3 +35,7 @@ table {
 div {
 	background-size: auto;
 }
+
+button {
+	width: 100%;
+}

@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<body>
+<body onload="randomize()">
+<button onclick="randomize()">RANDOMIZE!</button>
 <table>
 	<tr>
 <div class="b">
@@ -166,15 +167,26 @@
 
 var images = ["res/alexis-nazimek.jpg", "res/audrey-toussaint.jpg", "res/chloé-chudant.jpg", "res/dalia-filali.jpg", "res/djamel-bouroub.jpg", "res/dylan-maignan.jpg", "res/etienne-bertrand.jpg", "res/fabien-mehlinger.jpg", "res/florent-maillard.jpg", "res/gwenael-prevot.jpg", "res/jennifer-fleurentin.jpg", "res/kaouthar-najai.jpg", "res/kevin-dassigny.jpg", "res/kevin-fetet.jpg", "res/lucas-warnet.jpg", "res/meddy-richard.jpg", "res/medhy-chouieb.jpg", "res/nicolas-hel.jpg", "res/olivier-perrin.jpg", "res/steve-mouraret.jpg", "res/thibault-marchal.jpg", "res/virginie-creus.jpg", "res/yoann-dupoirieux.jpg"];
 
+var cs = [];
+function numbs() {
+	for (var i = 1; i <= 24; ++i){
+    	cs.push(i);
+	};
+}
 
 
+function randomize() {
 	for(i = 0; i < images.length; i++) {
-		var n = "c"+(i+1);
+		numbs();
+		var random = cs.splice(Math.random()*cs.length,1)[0];
+		var n = "c"+(random);
 		var getE = document.getElementById(n);
 		getE.style.background = 'url("'+images[i]+'")';
 		getE.style.backgroundSize = "cover";
-	}
-
+		console.log(random);
+		};
+	numbs();
+}
 
 
 
