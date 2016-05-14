@@ -1,0 +1,37 @@
+.a {
+	height: 250px;
+	width: 200px;
+	border: 1px solid;
+	/*font-size: 240px;*/
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	line-height: 240px;
+	/*background-color: #DDDDDD;*/
+	padding: 0;
+	background-size: cover;
+}
+
+
+.b {
+	width: 700px;
+	height: 300px;
+	border: 1px solid;
+	border-radius: 15px;
+	background-color: #878A79;
+	display: inline-block;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 1px;
+	text-align: center;
+}
+
+table {
+	margin-top: 50px;
+}
+
+div {
+	background-size: auto;
+}
